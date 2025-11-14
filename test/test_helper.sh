@@ -5,7 +5,7 @@ ORIGINAL_DIR="$PWD"
 setup_test_repo() {
     local test_dir=$(mktemp -d)
     cd "$test_dir"
-    git init -q
+    git init --initial-branch=main -q
     git config user.email "test@example.com"
     git config user.name "Test User"
     echo "$test_dir"
