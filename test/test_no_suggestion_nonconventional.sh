@@ -30,7 +30,7 @@ EDITOREOF
 chmod +x "$editor_script"
 
 export GIT_EDITOR="$editor_script"
-"$SCRIPT_DIR/../git-uptag.sh" > /dev/null 2>&1
+"$SCRIPT_DIR/../git-uptag" > /dev/null 2>&1
 
 # Check that the first line was empty (no suggestion)
 first_line=$(head -n1 "$template_file")

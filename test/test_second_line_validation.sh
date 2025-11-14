@@ -30,7 +30,7 @@ chmod +x "$editor_script"
 
 export GIT_EDITOR="$editor_script"
 set +e
-output=$("$SCRIPT_DIR/../git-uptag.sh" 2>&1)
+output=$("$SCRIPT_DIR/../git-uptag" 2>&1)
 exit_code=$?
 set -e
 

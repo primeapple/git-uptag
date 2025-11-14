@@ -30,7 +30,7 @@ EDITOREOF
 chmod +x "$editor_script"
 
 export GIT_EDITOR="$editor_script"
-"$SCRIPT_DIR/../git-uptag.sh"
+"$SCRIPT_DIR/../git-uptag"
 
 assert_tag_exists "v1.0.0"
 

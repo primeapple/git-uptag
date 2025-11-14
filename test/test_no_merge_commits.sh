@@ -32,7 +32,7 @@ EDITOREOF
 chmod +x "$editor_script"
 
 export GIT_EDITOR="$editor_script"
-"$SCRIPT_DIR/../git-uptag.sh" 2>&1 > /dev/null
+"$SCRIPT_DIR/../git-uptag" 2>&1 > /dev/null
 
 if grep -q "Merge branch" "$template_file"; then
     echo "FAIL: Merge commit was included in template"
